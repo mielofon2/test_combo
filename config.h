@@ -46,3 +46,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define COMBO_MAX_SIZE 3
 #define COMBO_STACK_MAX_SIZE 3
 #define COMBO_WAIT_TIME 100
+
+#define SYSTEM_CURRENT_DEFAULT SYSTEM_MACOS

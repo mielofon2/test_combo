@@ -30,7 +30,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "arbitrary_keycode/include.h"
 // #include "lang_shift/include.h"
 #include "combo/include.h"
-#define COMBO_DEBUG
+//#define COMBO_DEBUG
+
+#include "system.h"
+#include "custom_hotkeys.h"
 
 
 enum Combos {
@@ -50,9 +53,9 @@ enum Combos {
 const ComboWithKeycode combos[] PROGMEM = {
   // -------------------------------------------------------------------------
   // Russian combos on letters
-  CHORD(KC_Q,    /* <- */ CMS_Q),
-  CHORD(KC_W,   /* <- */ CMS_W),
-  CHORD(KC_BACKSLASH,   /* <- */ CMS_Q, CMS_W)
+  CHORD(CT_Q,    /* <- */ CMS_Q),
+  CHORD(CT_W,   /* <- */ CMS_W),
+  CHORD(CT_BACKSLASH,   /* <- */ CMS_Q, CMS_W)
 };
 const uint8_t combos_size = sizeof(combos)/sizeof(ComboWithKeycode);
 
@@ -157,9 +160,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   //   return false;
   // }
 
-  // if (!process_my_hotkeys(keycode, record)) {
-  //   return false;
-  // }
+  if (!process_my_hotkeys(keycode, record)) {
+    return false;
+  }
 
   // if (!process_system_keys(keycode, record)) {
   //   return false;
