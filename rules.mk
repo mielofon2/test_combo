@@ -1,0 +1,16 @@
+#VIAL_ENABLE = yes
+#LTO_ENABLE = yes
+# WEBUSB_ENABLE = yes
+# ORYX_ENABLE = no
+# # SRC = matrix.c
+# RGBLIGHT_ENABLE = no
+# RGB_MATRIX_ENABLE = no
+CONSOLE_ENABLE = yes
+# DEBUG_ENABLE   = yes
+# COMBO_ENABLE = yes
+OLED_ENABLE = yes
+OLED_DRIVER_ENABLE = yes
+#OLED_DRIVER         = SSD1306
+#TAP_DANCE_ENABLE = yes
+# VIAL_ENABLE = yes
+# LTO_ENABLE = yes
