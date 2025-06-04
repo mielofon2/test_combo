@@ -1,0 +1,6 @@
+[submodule "arbitrary_keycode"]
+	path = arbitrary_keycode
+	url = git@github.com:mielofon2/arbitrary_keycode.git
+[submodule "combo"]
+	path = combo
+	url = git@github.com:mielofon2/combo.git
